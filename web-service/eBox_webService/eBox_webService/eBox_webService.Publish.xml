@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="G:\Project\20150910eBox\Code\Git\eBox\web-service\publish" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="ebox_service.asmx" publishTime="11/21/2015 11:29:06" />
+    <file relUrl="bin/eBox_webService.pdb" publishTime="11/21/2015 12:06:43" />
+    <file relUrl="bin/eBox_webService.dll" publishTime="11/21/2015 12:06:43" />
+    <file relUrl="Web.config" publishTime="11/21/2015 12:08:47" />
+  </publishProfile>
+</publishData>

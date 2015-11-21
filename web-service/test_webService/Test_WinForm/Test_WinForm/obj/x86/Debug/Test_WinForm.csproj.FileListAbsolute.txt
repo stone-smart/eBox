@@ -1,0 +1,8 @@
+G:\Project\20150910eBox\Code\Git\eBox\web-service\test_webService\Test_WinForm\Test_WinForm\bin\Debug\Test_WinForm.exe.config
+G:\Project\20150910eBox\Code\Git\eBox\web-service\test_webService\Test_WinForm\Test_WinForm\bin\Debug\Test_WinForm.exe
+G:\Project\20150910eBox\Code\Git\eBox\web-service\test_webService\Test_WinForm\Test_WinForm\bin\Debug\Test_WinForm.pdb
+G:\Project\20150910eBox\Code\Git\eBox\web-service\test_webService\Test_WinForm\Test_WinForm\obj\x86\Debug\Test_WinForm.Form1.resources
+G:\Project\20150910eBox\Code\Git\eBox\web-service\test_webService\Test_WinForm\Test_WinForm\obj\x86\Debug\Test_WinForm.Properties.Resources.resources
+G:\Project\20150910eBox\Code\Git\eBox\web-service\test_webService\Test_WinForm\Test_WinForm\obj\x86\Debug\Test_WinForm.csproj.GenerateResource.Cache
+G:\Project\20150910eBox\Code\Git\eBox\web-service\test_webService\Test_WinForm\Test_WinForm\obj\x86\Debug\Test_WinForm.exe
+G:\Project\20150910eBox\Code\Git\eBox\web-service\test_webService\Test_WinForm\Test_WinForm\obj\x86\Debug\Test_WinForm.pdb
