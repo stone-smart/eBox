@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace eBox_Client
 {
-    public partial class ChildForm_GetKD : Form
+    public partial class ChildForm_SendKD : Form
     {
-        public ChildForm_GetKD()
+        public ChildForm_SendKD()
         {
-            InitializeComponent();            
-        }
-
-        private void ChildForm_GetKD_Load(object sender, EventArgs e)
-        {
-
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)

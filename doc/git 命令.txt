@@ -1,3 +1,7 @@
+更新代码-下载最新
+git pull
+
+提交代码
 git add . *
 git commit -s -m "jjj"
 git push -u origin master

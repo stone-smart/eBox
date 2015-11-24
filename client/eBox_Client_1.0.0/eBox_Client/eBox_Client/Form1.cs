@@ -11,6 +11,10 @@ namespace eBox_Client
 {
     public partial class MainForm : Form
     {
+        eBox_Client.ChildFrom_Postman childform_postman ;
+        eBox_Client.ChildForm_GetKD child ;
+
+        
         public MainForm()
         {
             InitializeComponent();
@@ -25,10 +29,22 @@ namespace eBox_Client
 
         private void button1_Click(object sender, EventArgs e)
         {
-            eBox_Client.ChildForm_GetKD child = new ChildForm_GetKD();
+            child = new ChildForm_GetKD();
             child.MdiParent = this;                     
             child.Show();
+            if(childform_postman!=null)
+                 childform_postman.Close();
             child.Dock = DockStyle.Fill;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            childform_postman = new ChildFrom_Postman();
+            childform_postman.MdiParent = this;
+            childform_postman.Show();
+            if(child!=null)
+                child.Close();
+            childform_postman.Dock = DockStyle.Fill;
         }
     }
 }

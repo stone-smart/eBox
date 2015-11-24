@@ -31,16 +31,16 @@
             this.statusStrip_Bottom = new System.Windows.Forms.StatusStrip();
             this.statusStrip_Top = new System.Windows.Forms.StatusStrip();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SendKD = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip_Bottom
             // 
-            this.statusStrip_Bottom.Location = new System.Drawing.Point(0, 358);
+            this.statusStrip_Bottom.Location = new System.Drawing.Point(0, 676);
             this.statusStrip_Bottom.Name = "statusStrip_Bottom";
-            this.statusStrip_Bottom.Size = new System.Drawing.Size(745, 22);
+            this.statusStrip_Bottom.Size = new System.Drawing.Size(1174, 22);
             this.statusStrip_Bottom.TabIndex = 1;
             this.statusStrip_Bottom.Text = "statusStrip1";
             // 
@@ -49,19 +49,29 @@
             this.statusStrip_Top.Dock = System.Windows.Forms.DockStyle.Top;
             this.statusStrip_Top.Location = new System.Drawing.Point(0, 0);
             this.statusStrip_Top.Name = "statusStrip_Top";
-            this.statusStrip_Top.Size = new System.Drawing.Size(745, 22);
+            this.statusStrip_Top.Size = new System.Drawing.Size(1174, 22);
             this.statusStrip_Top.TabIndex = 2;
             this.statusStrip_Top.Text = "statusStrip2";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.SendKD);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 306);
+            this.panel2.Location = new System.Drawing.Point(0, 624);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(745, 52);
+            this.panel2.Size = new System.Drawing.Size(1174, 52);
             this.panel2.TabIndex = 4;
+            // 
+            // SendKD
+            // 
+            this.SendKD.Location = new System.Drawing.Point(299, 13);
+            this.SendKD.Name = "SendKD";
+            this.SendKD.Size = new System.Drawing.Size(75, 23);
+            this.SendKD.TabIndex = 1;
+            this.SendKD.Text = "投快递";
+            this.SendKD.UseVisualStyleBackColor = true;
+            this.SendKD.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -74,26 +84,17 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(299, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "投快递";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 380);
+            this.ClientSize = new System.Drawing.Size(1174, 698);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.statusStrip_Top);
             this.Controls.Add(this.statusStrip_Bottom);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "MDF_Father_Main";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -108,7 +109,7 @@
         private System.Windows.Forms.StatusStrip statusStrip_Top;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SendKD;
     }
 }
 

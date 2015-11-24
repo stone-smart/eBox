@@ -14,3 +14,7 @@ G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_
 G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.MainForm.resources
 G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.Properties.Resources.resources
 G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.csproj.GenerateResource.Cache
+G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\bin\Debug\eBox_Client.exe.config
+G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.ChildFrom_Postman.resources
+G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.ChildForm_SendKD.resources
+G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.csprojResolveAssemblyReference.cache
