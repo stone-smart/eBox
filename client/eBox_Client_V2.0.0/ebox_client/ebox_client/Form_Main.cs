@@ -122,10 +122,11 @@ namespace ebox_client
                 OleCon.Open();
                 string sql = "Select * from PKG_RECORD where User_Code='"+ textBox_userCode.Text.Trim() + "' AND Flag_Taked=false";
                 OleCom = new OleDbCommand(sql, OleCon);
+              
                 OleReader = OleCom.ExecuteReader();
 
                 label_GetKD_Status.Text = "";
-                if(OleReader.Read()) //有记录为True
+                if (OleReader.Read()) //有记录为True
                 {
                     label_GetKD_Status.Text += "运单号：" + OleReader[9].ToString() + " 箱子号:" + OleReader[5].ToString() + " 存入日期：" + OleReader[6].ToString() + "\n";
                     //打开箱门
@@ -142,6 +143,8 @@ namespace ebox_client
                 {
                     label_GetKD_Status.Text = "提取码错误，请联系管理员，谢谢！";
                 }
+                OleReader.Close();
+                
 
             }
             catch (Exception ex)
@@ -150,7 +153,7 @@ namespace ebox_client
             }
             finally
             {
-                OleReader.Close();
+                
                 OleCon.Close();
             }
         }

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\web-service\publish" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="ebox_service.asmx" publishTime="11/21/2015 11:29:06" />
-    <file relUrl="bin/eBox_webService.pdb" publishTime="11/28/2015 19:52:00" />
-    <file relUrl="bin/eBox_webService.dll" publishTime="11/28/2015 19:52:01" />
-    <file relUrl="Web.config" publishTime="11/28/2015 19:55:16" />
+  <publishProfile publishUrl="G:\Project\20150910eBox\Code\Git\eBox\web-service\publish" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="ebox_service.asmx" publishTime="11/28/2015 23:15:55" />
+    <file relUrl="bin/eBox_webService.pdb" publishTime="11/28/2015 23:41:12" />
+    <file relUrl="bin/eBox_webService.dll" publishTime="11/28/2015 23:41:13" />
+    <file relUrl="Web.config" publishTime="11/28/2015 23:41:27" />
   </publishProfile>
 </publishData>
