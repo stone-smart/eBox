@@ -1,0 +1,15 @@
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_V2.0.0\ebox_client\ebox_client\bin\Debug\ebox_client.exe
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_V2.0.0\ebox_client\ebox_client\bin\Debug\ebox_client.pdb
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.Form_Main.resources
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.Properties.Resources.resources
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.csproj.GenerateResource.Cache
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.exe
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.pdb
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.exe
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.pdb
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\client\eBox_Client_V2.0.0\ebox_client\ebox_client\bin\Debug\ebox_client.exe.config
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\client\eBox_Client_V2.0.0\ebox_client\ebox_client\bin\Debug\ebox_client.exe
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\client\eBox_Client_V2.0.0\ebox_client\ebox_client\bin\Debug\ebox_client.pdb
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.Form_Main.resources
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.Properties.Resources.resources
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\client\eBox_Client_V2.0.0\ebox_client\ebox_client\obj\x86\Debug\ebox_client.csproj.GenerateResource.Cache

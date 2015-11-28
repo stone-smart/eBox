@@ -48,7 +48,7 @@ namespace eBox_webService
 
         [WebMethod]
         //上传存取包记录
-        public Boolean Uploadlog(string log)
+        public Boolean UploadPkglog(string log)
         {
             return true;
         }

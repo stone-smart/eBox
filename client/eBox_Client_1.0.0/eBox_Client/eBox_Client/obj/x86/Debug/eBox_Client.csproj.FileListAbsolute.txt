@@ -18,3 +18,6 @@ G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_
 G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.ChildFrom_Postman.resources
 G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.ChildForm_SendKD.resources
 G:\Project\20150910eBox\Code\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.csprojResolveAssemblyReference.cache
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\bin\Debug\eBox_Client.exe.config
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.exe
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox\client\eBox_Client_1.0.0\eBox_Client\eBox_Client\obj\x86\Debug\eBox_Client.pdb

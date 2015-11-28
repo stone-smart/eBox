@@ -1,0 +1,4 @@
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\web-service\eBox_webService\eBox_webService\bin\eBox_webService.dll
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\web-service\eBox_webService\eBox_webService\bin\eBox_webService.pdb
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\web-service\eBox_webService\eBox_webService\obj\Release\eBox_webService.dll
+F:\Project\201509 智能电子柜\上位机程序\Git\eBox2\web-service\eBox_webService\eBox_webService\obj\Release\eBox_webService.pdb
