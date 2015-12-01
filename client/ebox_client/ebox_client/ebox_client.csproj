@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoxControl.cs" />
+    <Compile Include="DataBaseLayer.cs" />
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,7 +85,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\ebox_webservice\ebox_service.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="database\" />
@@ -96,19 +96,20 @@
     <WCFMetadataStorage Include="Service References\ebox_webservice\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ebox_webservice\ebox_service.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\ebox_webservice\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ebox_webservice\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\ebox_webservice\ebox_service1.wsdl" />
     <None Include="Service References\ebox_webservice\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ebox_webservice\ebox_service1.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

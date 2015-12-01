@@ -223,10 +223,10 @@
   </wsdl:binding>
   <wsdl:service name="ebox_service">
     <wsdl:port name="ebox_serviceSoap" binding="tns:ebox_serviceSoap">
-      <soap:address location="http://localhost:12526/ebox_service.asmx" />
+      <soap:address location="http://192.168.1.116/ebox_service.asmx" />
     </wsdl:port>
     <wsdl:port name="ebox_serviceSoap12" binding="tns:ebox_serviceSoap12">
-      <soap12:address location="http://localhost:12526/ebox_service.asmx" />
+      <soap12:address location="http://192.168.1.116/ebox_service.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

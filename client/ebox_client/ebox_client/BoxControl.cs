@@ -15,7 +15,7 @@ namespace ebox_client
         public string strcon = "";
         OleDbConnection OleCon = null;
         OleDbCommand OleCom = null;
-        OleDbDataReader OleReader ;
+         
 
         //构造函数
         public BoxControl(string constr)
@@ -33,11 +33,13 @@ namespace ebox_client
                 OleCon.Open();
                 string sql = "Select * from BOX_MANAGE where Box_Size='" + size +"' AND Empty_State='0' AND Box_Valid='1'"  ;
                 OleCom = new OleDbCommand(sql, OleCon);
-                OleReader =OleCom.ExecuteReader();               
+                OleDbDataReader OleReader = OleCom.ExecuteReader();               
                 while (OleReader.Read()) //有记录为True
                 {
                     BoxID = OleReader[0].ToString();
                 }
+
+                OleReader.Close();
                 
             }
             catch (Exception ex)
@@ -45,8 +47,7 @@ namespace ebox_client
                 Console.WriteLine(ex.ToString());
             }
             finally
-            {
-                OleReader.Close();
+            {              
                 OleCon.Close();
             }
 
@@ -54,6 +55,7 @@ namespace ebox_client
         }
 
         //打开指定编号箱子
+        //查找 锁控地址 RS485接口发送命令 打开箱子
         public Boolean OpenBox(string BoxID)
         {
             return true;

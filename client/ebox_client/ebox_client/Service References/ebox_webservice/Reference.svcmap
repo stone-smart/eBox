@@ -18,11 +18,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:12526/ebox_service.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://192.168.1.116:80/ebox_service.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ebox_service.wsdl" MetadataType="Wsdl" ID="36a6e0df-ffee-4f97-acaa-a02870101f22" SourceId="1" SourceUrl="http://localhost:12526/ebox_service.asmx?wsdl" />
-    <MetadataFile FileName="ebox_service.disco" MetadataType="Disco" ID="face89a5-02c7-4388-9125-8a25b04b2e9e" SourceId="1" SourceUrl="http://localhost:12526/ebox_service.asmx?disco" />
+    <MetadataFile FileName="ebox_service1.wsdl" MetadataType="Wsdl" ID="e8ee707e-de77-4522-9cc4-aea7aa790df4" SourceId="1" SourceUrl="http://192.168.1.116/ebox_service.asmx?wsdl" />
+    <MetadataFile FileName="ebox_service1.disco" MetadataType="Disco" ID="5af356d3-da3d-4694-925b-966ee9e6680b" SourceId="1" SourceUrl="http://192.168.1.116/ebox_service.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

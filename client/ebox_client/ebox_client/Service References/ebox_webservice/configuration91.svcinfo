@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="6sgXTMcDvfAs1Nqb0NnmVmqoMgM=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="R0c8GgzBBmFmT9KvyWxJ+PGNFR4=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="ebox_serviceSoap">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="ebox_serviceSoap" contract="ebox_webservice.ebox_serviceSoap" bindingType="basicHttpBinding" address="http://localhost:12526/ebox_service.asmx" bindingConfiguration="ebox_serviceSoap">
+    <endpoint name="ebox_serviceSoap" contract="ebox_webservice.ebox_serviceSoap" bindingType="basicHttpBinding" address="http://192.168.1.116/ebox_service.asmx" bindingConfiguration="ebox_serviceSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:12526/ebox_service.asmx</serializedValue>
+          <serializedValue>http://192.168.1.116/ebox_service.asmx</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

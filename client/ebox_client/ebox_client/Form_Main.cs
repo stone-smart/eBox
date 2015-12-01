@@ -90,7 +90,7 @@ namespace ebox_client
                 label_findStatus.Text = "";
                 while (OleReader.Read()) //有记录为True
                 {
-                   label_findStatus.Text += "运单号：" + OleReader[9].ToString() + " 箱子号:" + OleReader[5].ToString() +" 存入日期：" + OleReader[6].ToString()+"\n";                                            
+                    label_findStatus.Text += "运单号：" + OleReader[9].ToString() + " 箱子号:" + OleReader[5].ToString() + " 存入时间：" + OleReader[6].ToString() + " 提取时间：" + OleReader[7].ToString() + "\n";                                            
                 }
                 if (label_findStatus.Text == "")//没有记录
                 {
@@ -129,12 +129,18 @@ namespace ebox_client
                 if (OleReader.Read()) //有记录为True
                 {
                     label_GetKD_Status.Text += "运单号：" + OleReader[9].ToString() + " 箱子号:" + OleReader[5].ToString() + " 存入日期：" + OleReader[6].ToString() + "\n";
+                    label_GetKD_Status.Text += "\n箱子已打开，请取走您的快件，谢谢!\n";
+                    textBox_userCode.Text = "";
+                    string ItemNo = OleReader[0].ToString();
                     //打开箱门
 
                     //语音提示
 
                     //更新PKG_Log数据库
-
+                    sql = "Update PKG_RECORD Set  PKG_RECORD.Box_ID='A8',PKG_RECORD.Flag_Taked=true,PKG_RECORD.Time_Take=#" + System.DateTime.Now.ToLocalTime().ToString() + "# where PKG_RECORD.No=" + ItemNo;
+                    OleCom =new OleDbCommand(sql, OleCon);
+                    int PassOk=OleCom.ExecuteNonQuery();
+                    Console.WriteLine(PassOk);
                     //更新box_infor数据库，设置对应箱子为空
 
 
@@ -152,8 +158,7 @@ namespace ebox_client
                 MessageBox.Show(ex.ToString());
             }
             finally
-            {
-                
+            {                
                 OleCon.Close();
             }
         }
@@ -189,7 +194,10 @@ namespace ebox_client
                     textBox_postm_psw.Text = "";
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
 
 
 
@@ -234,7 +242,7 @@ namespace ebox_client
                     //更新快递员余额数据库
 
                     //超时计时开始
-                    label_SendPKG_status.Text = "箱门已打开，请存入包裹，关好箱门!";
+                    label_SendPKG_status.Text = BoxID+"箱已打开，请存入包裹，关好箱门!";
                     textBox_SD_usr_phone.Text = "";
                     textBox_SD_express_No.Text = "";
 

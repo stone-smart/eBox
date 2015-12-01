@@ -85,7 +85,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip_Top.Location = new System.Drawing.Point(0, 0);
             this.statusStrip_Top.Name = "statusStrip_Top";
-            this.statusStrip_Top.Size = new System.Drawing.Size(714, 22);
+            this.statusStrip_Top.Size = new System.Drawing.Size(1027, 22);
             this.statusStrip_Top.TabIndex = 0;
             this.statusStrip_Top.Text = "statusStrip1";
             // 
@@ -98,9 +98,9 @@
             // toolStrip_bottom
             // 
             this.toolStrip_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStrip_bottom.Location = new System.Drawing.Point(0, 396);
+            this.toolStrip_bottom.Location = new System.Drawing.Point(0, 568);
             this.toolStrip_bottom.Name = "toolStrip_bottom";
-            this.toolStrip_bottom.Size = new System.Drawing.Size(714, 25);
+            this.toolStrip_bottom.Size = new System.Drawing.Size(1027, 25);
             this.toolStrip_bottom.TabIndex = 1;
             this.toolStrip_bottom.Text = "toolStrip1";
             // 
@@ -111,9 +111,9 @@
             this.panel1.Controls.Add(this.button_SendKD);
             this.panel1.Controls.Add(this.button_getKD);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 337);
+            this.panel1.Location = new System.Drawing.Point(0, 509);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(714, 59);
+            this.panel1.Size = new System.Drawing.Size(1027, 59);
             this.panel1.TabIndex = 2;
             // 
             // button_Help
@@ -164,7 +164,7 @@
             this.tabControl_menu.Location = new System.Drawing.Point(96, 43);
             this.tabControl_menu.Name = "tabControl_menu";
             this.tabControl_menu.SelectedIndex = 0;
-            this.tabControl_menu.Size = new System.Drawing.Size(492, 263);
+            this.tabControl_menu.Size = new System.Drawing.Size(597, 376);
             this.tabControl_menu.TabIndex = 3;
             // 
             // tabPage_GetKD
@@ -380,7 +380,7 @@
             this.tabPage_SendKD.Location = new System.Drawing.Point(4, 22);
             this.tabPage_SendKD.Name = "tabPage_SendKD";
             this.tabPage_SendKD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_SendKD.Size = new System.Drawing.Size(484, 237);
+            this.tabPage_SendKD.Size = new System.Drawing.Size(589, 350);
             this.tabPage_SendKD.TabIndex = 3;
             this.tabPage_SendKD.Text = "投快件";
             this.tabPage_SendKD.UseVisualStyleBackColor = true;
@@ -388,7 +388,7 @@
             // label_SendPKG_status
             // 
             this.label_SendPKG_status.AutoSize = true;
-            this.label_SendPKG_status.Location = new System.Drawing.Point(292, 156);
+            this.label_SendPKG_status.Location = new System.Drawing.Point(42, 194);
             this.label_SendPKG_status.Name = "label_SendPKG_status";
             this.label_SendPKG_status.Size = new System.Drawing.Size(41, 12);
             this.label_SendPKG_status.TabIndex = 10;
@@ -412,7 +412,7 @@
             // 
             // button_SendPKG_Cancel
             // 
-            this.button_SendPKG_Cancel.Location = new System.Drawing.Point(273, 192);
+            this.button_SendPKG_Cancel.Location = new System.Drawing.Point(282, 238);
             this.button_SendPKG_Cancel.Name = "button_SendPKG_Cancel";
             this.button_SendPKG_Cancel.Size = new System.Drawing.Size(75, 23);
             this.button_SendPKG_Cancel.TabIndex = 7;
@@ -421,7 +421,7 @@
             // 
             // button_SendPKG
             // 
-            this.button_SendPKG.Location = new System.Drawing.Point(161, 192);
+            this.button_SendPKG.Location = new System.Drawing.Point(158, 238);
             this.button_SendPKG.Name = "button_SendPKG";
             this.button_SendPKG.Size = new System.Drawing.Size(75, 23);
             this.button_SendPKG.TabIndex = 6;
@@ -490,12 +490,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 421);
+            this.ClientSize = new System.Drawing.Size(1027, 593);
             this.Controls.Add(this.tabControl_menu);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip_bottom);
             this.Controls.Add(this.statusStrip_Top);
             this.Name = "Form_Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ebox system";
             this.Load += new System.EventHandler(this.Form_Main_Load);
             this.statusStrip_Top.ResumeLayout(false);
