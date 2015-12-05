@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoxControl.cs" />
-    <Compile Include="DataBaseLayer.cs" />
+    <Compile Include="DataBaseClass.cs" />
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>

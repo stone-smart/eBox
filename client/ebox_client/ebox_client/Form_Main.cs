@@ -121,28 +121,34 @@ namespace ebox_client
                 OleCon = new OleDbConnection(strcon);
                 OleCon.Open();
                 string sql = "Select * from PKG_RECORD where User_Code='"+ textBox_userCode.Text.Trim() + "' AND Flag_Taked=false";
-                OleCom = new OleDbCommand(sql, OleCon);
-              
+                OleCom = new OleDbCommand(sql, OleCon);              
                 OleReader = OleCom.ExecuteReader();
-
                 label_GetKD_Status.Text = "";
                 if (OleReader.Read()) //有记录为True
                 {
+
+                    //开箱提示
                     label_GetKD_Status.Text += "运单号：" + OleReader[9].ToString() + " 箱子号:" + OleReader[5].ToString() + " 存入日期：" + OleReader[6].ToString() + "\n";
                     label_GetKD_Status.Text += "\n箱子已打开，请取走您的快件，谢谢!\n";
                     textBox_userCode.Text = "";
                     string ItemNo = OleReader[0].ToString();
+                    string BoxID = OleReader[5].ToString();
+
                     //打开箱门
+                    MyBox.OpenBox(BoxID);
 
                     //语音提示
 
                     //更新PKG_Log数据库
-                    sql = "Update PKG_RECORD Set  PKG_RECORD.Box_ID='A8',PKG_RECORD.Flag_Taked=true,PKG_RECORD.Time_Take=#" + System.DateTime.Now.ToLocalTime().ToString() + "# where PKG_RECORD.No=" + ItemNo;
+                    sql = "Update PKG_RECORD Set  PKG_RECORD.Flag_Taked=true,PKG_RECORD.Time_Take=#" + System.DateTime.Now.ToLocalTime().ToString() + "# where PKG_RECORD.No=" + ItemNo;
                     OleCom =new OleDbCommand(sql, OleCon);
                     int PassOk=OleCom.ExecuteNonQuery();
                     Console.WriteLine(PassOk);
-                    //更新box_infor数据库，设置对应箱子为空
-
+                    //更新box_manage数据库，设置对应箱子为空
+                    sql = "Update BOX_MANAGE Set  BOX_MANAGE.Empty_State=true,BOX_MANAGE.EBox_No=10000,BOX_MANAGE.Time_update=#" + System.DateTime.Now.ToLocalTime().ToString() + "# where BOX_MANAGE.Box_ID='" + BoxID+"'";
+                    OleCom = new OleDbCommand(sql, OleCon);
+                    int ReturnVal = OleCom.ExecuteNonQuery();
+                    Console.WriteLine(ReturnVal);
 
                 }
                 else  //没有记录
@@ -224,6 +230,7 @@ namespace ebox_client
             }
 
             //返回合适的空箱子
+            boxDX = "1";
             string BoxID=MyBox.FindBox(boxDX);
             if (BoxID == "") //无合适箱子
             {

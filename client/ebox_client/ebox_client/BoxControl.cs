@@ -15,7 +15,12 @@ namespace ebox_client
         public string strcon = "";
         OleDbConnection OleCon = null;
         OleDbCommand OleCom = null;
-         
+
+        struct BOX_ADDR
+        {
+            public string Control_BD_Addr;
+            public string Box_No;
+        };
 
         //构造函数
         public BoxControl(string constr)
@@ -26,12 +31,12 @@ namespace ebox_client
         //查询并返回空箱子编号
         public String FindBox(string size)
         {
-            string BoxID="A0";
+            string BoxID="";
             try
             {
                 OleCon = new OleDbConnection(strcon);
                 OleCon.Open();
-                string sql = "Select * from BOX_MANAGE where Box_Size='" + size +"' AND Empty_State='0' AND Box_Valid='1'"  ;
+                string sql = "Select * from BOX_MANAGE where Box_Size='" + size +"' AND Empty_State=true AND Box_Valid=true"  ;
                 OleCom = new OleDbCommand(sql, OleCon);
                 OleDbDataReader OleReader = OleCom.ExecuteReader();               
                 while (OleReader.Read()) //有记录为True
@@ -50,7 +55,7 @@ namespace ebox_client
             {              
                 OleCon.Close();
             }
-
+            
             return BoxID;
         }
 
@@ -58,6 +63,34 @@ namespace ebox_client
         //查找 锁控地址 RS485接口发送命令 打开箱子
         public Boolean OpenBox(string BoxID)
         {
+            BOX_ADDR Box_control_addr;
+            //查询锁控地址
+            try
+            {
+                OleCon = new OleDbConnection(strcon);
+                OleCon.Open();
+                string sql = "Select * from BOX_MANAGE where Box_ID='" + BoxID + "'";
+                OleCom = new OleDbCommand(sql, OleCon);
+                OleDbDataReader OleReader = OleCom.ExecuteReader();
+                while (OleReader.Read()) //有记录为True
+                {
+                    Box_control_addr.Control_BD_Addr = OleReader[1].ToString();
+                    Box_control_addr.Box_No = OleReader[2].ToString();
+                }
+
+                OleReader.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                OleCon.Close();
+            }
+
+            //RS485SendCmd_OpenBox(Box_Control_addr);
             return true;
         }
 

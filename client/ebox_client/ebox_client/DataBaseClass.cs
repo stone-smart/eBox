@@ -6,7 +6,7 @@ using System.Data.OleDb;
 
 namespace ebox_client
 {
-    class DataBaseLayer
+    class DataBaseClass
     {
 
         //数据库连接
@@ -14,6 +14,12 @@ namespace ebox_client
         OleDbConnection OleCon=null;
         OleDbCommand OleCom = null;
         OleDbDataReader OleReader = null;
+
+        public DataBaseClass(string strcon)
+        {
+            OleCon = new OleDbConnection(strcon);
+            OleCon.Open();
+        }
 
         public Boolean AddPkgLogItem(string BoxID)
         {
@@ -25,6 +31,7 @@ namespace ebox_client
 
             return true;
         }
+
 
     }
 }
