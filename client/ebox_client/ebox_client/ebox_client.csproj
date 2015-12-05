@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="BoxControl.cs" />
     <Compile Include="DataBaseClass.cs" />
+    <Compile Include="Encrypt.cs" />
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +64,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Telcom.cs" />
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>

@@ -6,6 +6,8 @@ using System.Data.OleDb;
 
 namespace ebox_client
 {
+    //电子柜控制类
+    //1.打开电子柜 2.查询空箱子
     class BoxControl
     {
         //类型，变量声明

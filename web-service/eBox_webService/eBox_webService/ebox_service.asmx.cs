@@ -32,15 +32,16 @@ namespace eBox_webService
 
         [WebMethod]
         //快递员登录信息验证
-        public Boolean Postman_Verify(string PhoneNo, string Psw)
+        //返回参数：-100，验证失败；0+整数，余额；                
+        public int Verify_Postman(string PhoneNo, string Psw)
         {
 
-            return true;
+            return 20;
         }
 
         [WebMethod]
         //管理员登录验证
-        public Boolean Manager_Verify(string PhoneNo, string Psw)
+        public Boolean Verify_Manager(string PhoneNo, string Psw)
         {
 
             return true;
@@ -48,10 +49,25 @@ namespace eBox_webService
 
         [WebMethod]
         //上传存取包记录
-        public Boolean UploadPkglog(string log)
+        public Boolean UploadPkglogItem(string log)
         {
             return true;
         }
+
+        [WebMethod]
+        //快递员注册
+        public Boolean Register_Postman(string PhoneNo, string Psw)
+        {
+            return true;
+        }
+
+        [WebMethod]
+        //快递员存包消费额
+        //返回值，余额
+        public int Postman_Spend(string PhoneNo, int cost)
+        {
+            return 18;
+        }     
         
     }
 }
