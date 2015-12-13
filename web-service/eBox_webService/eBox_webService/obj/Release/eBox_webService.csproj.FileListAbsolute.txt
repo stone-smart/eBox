@@ -6,3 +6,4 @@ G:\Project\20150910eBox\Code\Git\eBox\web-service\eBox_webService\eBox_webServic
 G:\Project\20150910eBox\Code\Git\eBox\web-service\eBox_webService\eBox_webService\bin\eBox_webService.pdb
 G:\Project\20150910eBox\Code\Git\eBox\web-service\eBox_webService\eBox_webService\obj\Release\eBox_webService.dll
 G:\Project\20150910eBox\Code\Git\eBox\web-service\eBox_webService\eBox_webService\obj\Release\eBox_webService.pdb
+G:\Project\20150910eBox\Code\Git\eBox\web-service\eBox_webService\eBox_webService\obj\Release\eBox_webService.csprojResolveAssemblyReference.cache

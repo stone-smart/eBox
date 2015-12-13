@@ -23,16 +23,24 @@ namespace ebox_client.ebox_webservice {
         int add(int a, int b);
         
         // CODEGEN: 命名空间 http://eboxServic.org/ 的元素名称 PhoneNo 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://eboxServic.org/Postman_Verify", ReplyAction="*")]
-        ebox_client.ebox_webservice.Postman_VerifyResponse Postman_Verify(ebox_client.ebox_webservice.Postman_VerifyRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://eboxServic.org/Verify_Postman", ReplyAction="*")]
+        ebox_client.ebox_webservice.Verify_PostmanResponse Verify_Postman(ebox_client.ebox_webservice.Verify_PostmanRequest request);
         
         // CODEGEN: 命名空间 http://eboxServic.org/ 的元素名称 PhoneNo 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://eboxServic.org/Manager_Verify", ReplyAction="*")]
-        ebox_client.ebox_webservice.Manager_VerifyResponse Manager_Verify(ebox_client.ebox_webservice.Manager_VerifyRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://eboxServic.org/Verify_Manager", ReplyAction="*")]
+        ebox_client.ebox_webservice.Verify_ManagerResponse Verify_Manager(ebox_client.ebox_webservice.Verify_ManagerRequest request);
         
         // CODEGEN: 命名空间 http://eboxServic.org/ 的元素名称 log 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://eboxServic.org/UploadPkglog", ReplyAction="*")]
-        ebox_client.ebox_webservice.UploadPkglogResponse UploadPkglog(ebox_client.ebox_webservice.UploadPkglogRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://eboxServic.org/UploadPkglogItem", ReplyAction="*")]
+        ebox_client.ebox_webservice.UploadPkglogItemResponse UploadPkglogItem(ebox_client.ebox_webservice.UploadPkglogItemRequest request);
+        
+        // CODEGEN: 命名空间 http://eboxServic.org/ 的元素名称 PhoneNo 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://eboxServic.org/Register_Postman", ReplyAction="*")]
+        ebox_client.ebox_webservice.Register_PostmanResponse Register_Postman(ebox_client.ebox_webservice.Register_PostmanRequest request);
+        
+        // CODEGEN: 命名空间 http://eboxServic.org/ 的元素名称 PhoneNo 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://eboxServic.org/Postman_Spend", ReplyAction="*")]
+        ebox_client.ebox_webservice.Postman_SpendResponse Postman_Spend(ebox_client.ebox_webservice.Postman_SpendRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -100,15 +108,15 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class Postman_VerifyRequest {
+    public partial class Verify_PostmanRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="Postman_Verify", Namespace="http://eboxServic.org/", Order=0)]
-        public ebox_client.ebox_webservice.Postman_VerifyRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Verify_Postman", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.Verify_PostmanRequestBody Body;
         
-        public Postman_VerifyRequest() {
+        public Verify_PostmanRequest() {
         }
         
-        public Postman_VerifyRequest(ebox_client.ebox_webservice.Postman_VerifyRequestBody Body) {
+        public Verify_PostmanRequest(ebox_client.ebox_webservice.Verify_PostmanRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -117,7 +125,7 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
-    public partial class Postman_VerifyRequestBody {
+    public partial class Verify_PostmanRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string PhoneNo;
@@ -125,10 +133,10 @@ namespace ebox_client.ebox_webservice {
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
         public string Psw;
         
-        public Postman_VerifyRequestBody() {
+        public Verify_PostmanRequestBody() {
         }
         
-        public Postman_VerifyRequestBody(string PhoneNo, string Psw) {
+        public Verify_PostmanRequestBody(string PhoneNo, string Psw) {
             this.PhoneNo = PhoneNo;
             this.Psw = Psw;
         }
@@ -138,15 +146,15 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class Postman_VerifyResponse {
+    public partial class Verify_PostmanResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="Postman_VerifyResponse", Namespace="http://eboxServic.org/", Order=0)]
-        public ebox_client.ebox_webservice.Postman_VerifyResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Verify_PostmanResponse", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.Verify_PostmanResponseBody Body;
         
-        public Postman_VerifyResponse() {
+        public Verify_PostmanResponse() {
         }
         
-        public Postman_VerifyResponse(ebox_client.ebox_webservice.Postman_VerifyResponseBody Body) {
+        public Verify_PostmanResponse(ebox_client.ebox_webservice.Verify_PostmanResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -155,16 +163,16 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
-    public partial class Postman_VerifyResponseBody {
+    public partial class Verify_PostmanResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool Postman_VerifyResult;
+        public int Verify_PostmanResult;
         
-        public Postman_VerifyResponseBody() {
+        public Verify_PostmanResponseBody() {
         }
         
-        public Postman_VerifyResponseBody(bool Postman_VerifyResult) {
-            this.Postman_VerifyResult = Postman_VerifyResult;
+        public Verify_PostmanResponseBody(int Verify_PostmanResult) {
+            this.Verify_PostmanResult = Verify_PostmanResult;
         }
     }
     
@@ -172,15 +180,15 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class Manager_VerifyRequest {
+    public partial class Verify_ManagerRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="Manager_Verify", Namespace="http://eboxServic.org/", Order=0)]
-        public ebox_client.ebox_webservice.Manager_VerifyRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Verify_Manager", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.Verify_ManagerRequestBody Body;
         
-        public Manager_VerifyRequest() {
+        public Verify_ManagerRequest() {
         }
         
-        public Manager_VerifyRequest(ebox_client.ebox_webservice.Manager_VerifyRequestBody Body) {
+        public Verify_ManagerRequest(ebox_client.ebox_webservice.Verify_ManagerRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -189,7 +197,7 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
-    public partial class Manager_VerifyRequestBody {
+    public partial class Verify_ManagerRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string PhoneNo;
@@ -197,10 +205,10 @@ namespace ebox_client.ebox_webservice {
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
         public string Psw;
         
-        public Manager_VerifyRequestBody() {
+        public Verify_ManagerRequestBody() {
         }
         
-        public Manager_VerifyRequestBody(string PhoneNo, string Psw) {
+        public Verify_ManagerRequestBody(string PhoneNo, string Psw) {
             this.PhoneNo = PhoneNo;
             this.Psw = Psw;
         }
@@ -210,15 +218,15 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class Manager_VerifyResponse {
+    public partial class Verify_ManagerResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="Manager_VerifyResponse", Namespace="http://eboxServic.org/", Order=0)]
-        public ebox_client.ebox_webservice.Manager_VerifyResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Verify_ManagerResponse", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.Verify_ManagerResponseBody Body;
         
-        public Manager_VerifyResponse() {
+        public Verify_ManagerResponse() {
         }
         
-        public Manager_VerifyResponse(ebox_client.ebox_webservice.Manager_VerifyResponseBody Body) {
+        public Verify_ManagerResponse(ebox_client.ebox_webservice.Verify_ManagerResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -227,16 +235,16 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
-    public partial class Manager_VerifyResponseBody {
+    public partial class Verify_ManagerResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool Manager_VerifyResult;
+        public bool Verify_ManagerResult;
         
-        public Manager_VerifyResponseBody() {
+        public Verify_ManagerResponseBody() {
         }
         
-        public Manager_VerifyResponseBody(bool Manager_VerifyResult) {
-            this.Manager_VerifyResult = Manager_VerifyResult;
+        public Verify_ManagerResponseBody(bool Verify_ManagerResult) {
+            this.Verify_ManagerResult = Verify_ManagerResult;
         }
     }
     
@@ -244,15 +252,15 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class UploadPkglogRequest {
+    public partial class UploadPkglogItemRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="UploadPkglog", Namespace="http://eboxServic.org/", Order=0)]
-        public ebox_client.ebox_webservice.UploadPkglogRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UploadPkglogItem", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.UploadPkglogItemRequestBody Body;
         
-        public UploadPkglogRequest() {
+        public UploadPkglogItemRequest() {
         }
         
-        public UploadPkglogRequest(ebox_client.ebox_webservice.UploadPkglogRequestBody Body) {
+        public UploadPkglogItemRequest(ebox_client.ebox_webservice.UploadPkglogItemRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -261,15 +269,15 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
-    public partial class UploadPkglogRequestBody {
+    public partial class UploadPkglogItemRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string log;
         
-        public UploadPkglogRequestBody() {
+        public UploadPkglogItemRequestBody() {
         }
         
-        public UploadPkglogRequestBody(string log) {
+        public UploadPkglogItemRequestBody(string log) {
             this.log = log;
         }
     }
@@ -278,15 +286,15 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class UploadPkglogResponse {
+    public partial class UploadPkglogItemResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="UploadPkglogResponse", Namespace="http://eboxServic.org/", Order=0)]
-        public ebox_client.ebox_webservice.UploadPkglogResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UploadPkglogItemResponse", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.UploadPkglogItemResponseBody Body;
         
-        public UploadPkglogResponse() {
+        public UploadPkglogItemResponse() {
         }
         
-        public UploadPkglogResponse(ebox_client.ebox_webservice.UploadPkglogResponseBody Body) {
+        public UploadPkglogItemResponse(ebox_client.ebox_webservice.UploadPkglogItemResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -295,16 +303,160 @@ namespace ebox_client.ebox_webservice {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
-    public partial class UploadPkglogResponseBody {
+    public partial class UploadPkglogItemResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool UploadPkglogResult;
+        public bool UploadPkglogItemResult;
         
-        public UploadPkglogResponseBody() {
+        public UploadPkglogItemResponseBody() {
         }
         
-        public UploadPkglogResponseBody(bool UploadPkglogResult) {
-            this.UploadPkglogResult = UploadPkglogResult;
+        public UploadPkglogItemResponseBody(bool UploadPkglogItemResult) {
+            this.UploadPkglogItemResult = UploadPkglogItemResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Register_PostmanRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Register_Postman", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.Register_PostmanRequestBody Body;
+        
+        public Register_PostmanRequest() {
+        }
+        
+        public Register_PostmanRequest(ebox_client.ebox_webservice.Register_PostmanRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
+    public partial class Register_PostmanRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string PhoneNo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string Psw;
+        
+        public Register_PostmanRequestBody() {
+        }
+        
+        public Register_PostmanRequestBody(string PhoneNo, string Psw) {
+            this.PhoneNo = PhoneNo;
+            this.Psw = Psw;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Register_PostmanResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Register_PostmanResponse", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.Register_PostmanResponseBody Body;
+        
+        public Register_PostmanResponse() {
+        }
+        
+        public Register_PostmanResponse(ebox_client.ebox_webservice.Register_PostmanResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
+    public partial class Register_PostmanResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool Register_PostmanResult;
+        
+        public Register_PostmanResponseBody() {
+        }
+        
+        public Register_PostmanResponseBody(bool Register_PostmanResult) {
+            this.Register_PostmanResult = Register_PostmanResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Postman_SpendRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Postman_Spend", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.Postman_SpendRequestBody Body;
+        
+        public Postman_SpendRequest() {
+        }
+        
+        public Postman_SpendRequest(ebox_client.ebox_webservice.Postman_SpendRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
+    public partial class Postman_SpendRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string PhoneNo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int cost;
+        
+        public Postman_SpendRequestBody() {
+        }
+        
+        public Postman_SpendRequestBody(string PhoneNo, int cost) {
+            this.PhoneNo = PhoneNo;
+            this.cost = cost;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Postman_SpendResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Postman_SpendResponse", Namespace="http://eboxServic.org/", Order=0)]
+        public ebox_client.ebox_webservice.Postman_SpendResponseBody Body;
+        
+        public Postman_SpendResponse() {
+        }
+        
+        public Postman_SpendResponse(ebox_client.ebox_webservice.Postman_SpendResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://eboxServic.org/")]
+    public partial class Postman_SpendResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int Postman_SpendResult;
+        
+        public Postman_SpendResponseBody() {
+        }
+        
+        public Postman_SpendResponseBody(int Postman_SpendResult) {
+            this.Postman_SpendResult = Postman_SpendResult;
         }
     }
     
@@ -352,44 +504,72 @@ namespace ebox_client.ebox_webservice {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ebox_client.ebox_webservice.Postman_VerifyResponse ebox_client.ebox_webservice.ebox_serviceSoap.Postman_Verify(ebox_client.ebox_webservice.Postman_VerifyRequest request) {
-            return base.Channel.Postman_Verify(request);
+        ebox_client.ebox_webservice.Verify_PostmanResponse ebox_client.ebox_webservice.ebox_serviceSoap.Verify_Postman(ebox_client.ebox_webservice.Verify_PostmanRequest request) {
+            return base.Channel.Verify_Postman(request);
         }
         
-        public bool Postman_Verify(string PhoneNo, string Psw) {
-            ebox_client.ebox_webservice.Postman_VerifyRequest inValue = new ebox_client.ebox_webservice.Postman_VerifyRequest();
-            inValue.Body = new ebox_client.ebox_webservice.Postman_VerifyRequestBody();
+        public int Verify_Postman(string PhoneNo, string Psw) {
+            ebox_client.ebox_webservice.Verify_PostmanRequest inValue = new ebox_client.ebox_webservice.Verify_PostmanRequest();
+            inValue.Body = new ebox_client.ebox_webservice.Verify_PostmanRequestBody();
             inValue.Body.PhoneNo = PhoneNo;
             inValue.Body.Psw = Psw;
-            ebox_client.ebox_webservice.Postman_VerifyResponse retVal = ((ebox_client.ebox_webservice.ebox_serviceSoap)(this)).Postman_Verify(inValue);
-            return retVal.Body.Postman_VerifyResult;
+            ebox_client.ebox_webservice.Verify_PostmanResponse retVal = ((ebox_client.ebox_webservice.ebox_serviceSoap)(this)).Verify_Postman(inValue);
+            return retVal.Body.Verify_PostmanResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ebox_client.ebox_webservice.Manager_VerifyResponse ebox_client.ebox_webservice.ebox_serviceSoap.Manager_Verify(ebox_client.ebox_webservice.Manager_VerifyRequest request) {
-            return base.Channel.Manager_Verify(request);
+        ebox_client.ebox_webservice.Verify_ManagerResponse ebox_client.ebox_webservice.ebox_serviceSoap.Verify_Manager(ebox_client.ebox_webservice.Verify_ManagerRequest request) {
+            return base.Channel.Verify_Manager(request);
         }
         
-        public bool Manager_Verify(string PhoneNo, string Psw) {
-            ebox_client.ebox_webservice.Manager_VerifyRequest inValue = new ebox_client.ebox_webservice.Manager_VerifyRequest();
-            inValue.Body = new ebox_client.ebox_webservice.Manager_VerifyRequestBody();
+        public bool Verify_Manager(string PhoneNo, string Psw) {
+            ebox_client.ebox_webservice.Verify_ManagerRequest inValue = new ebox_client.ebox_webservice.Verify_ManagerRequest();
+            inValue.Body = new ebox_client.ebox_webservice.Verify_ManagerRequestBody();
             inValue.Body.PhoneNo = PhoneNo;
             inValue.Body.Psw = Psw;
-            ebox_client.ebox_webservice.Manager_VerifyResponse retVal = ((ebox_client.ebox_webservice.ebox_serviceSoap)(this)).Manager_Verify(inValue);
-            return retVal.Body.Manager_VerifyResult;
+            ebox_client.ebox_webservice.Verify_ManagerResponse retVal = ((ebox_client.ebox_webservice.ebox_serviceSoap)(this)).Verify_Manager(inValue);
+            return retVal.Body.Verify_ManagerResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ebox_client.ebox_webservice.UploadPkglogResponse ebox_client.ebox_webservice.ebox_serviceSoap.UploadPkglog(ebox_client.ebox_webservice.UploadPkglogRequest request) {
-            return base.Channel.UploadPkglog(request);
+        ebox_client.ebox_webservice.UploadPkglogItemResponse ebox_client.ebox_webservice.ebox_serviceSoap.UploadPkglogItem(ebox_client.ebox_webservice.UploadPkglogItemRequest request) {
+            return base.Channel.UploadPkglogItem(request);
         }
         
-        public bool UploadPkglog(string log) {
-            ebox_client.ebox_webservice.UploadPkglogRequest inValue = new ebox_client.ebox_webservice.UploadPkglogRequest();
-            inValue.Body = new ebox_client.ebox_webservice.UploadPkglogRequestBody();
+        public bool UploadPkglogItem(string log) {
+            ebox_client.ebox_webservice.UploadPkglogItemRequest inValue = new ebox_client.ebox_webservice.UploadPkglogItemRequest();
+            inValue.Body = new ebox_client.ebox_webservice.UploadPkglogItemRequestBody();
             inValue.Body.log = log;
-            ebox_client.ebox_webservice.UploadPkglogResponse retVal = ((ebox_client.ebox_webservice.ebox_serviceSoap)(this)).UploadPkglog(inValue);
-            return retVal.Body.UploadPkglogResult;
+            ebox_client.ebox_webservice.UploadPkglogItemResponse retVal = ((ebox_client.ebox_webservice.ebox_serviceSoap)(this)).UploadPkglogItem(inValue);
+            return retVal.Body.UploadPkglogItemResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ebox_client.ebox_webservice.Register_PostmanResponse ebox_client.ebox_webservice.ebox_serviceSoap.Register_Postman(ebox_client.ebox_webservice.Register_PostmanRequest request) {
+            return base.Channel.Register_Postman(request);
+        }
+        
+        public bool Register_Postman(string PhoneNo, string Psw) {
+            ebox_client.ebox_webservice.Register_PostmanRequest inValue = new ebox_client.ebox_webservice.Register_PostmanRequest();
+            inValue.Body = new ebox_client.ebox_webservice.Register_PostmanRequestBody();
+            inValue.Body.PhoneNo = PhoneNo;
+            inValue.Body.Psw = Psw;
+            ebox_client.ebox_webservice.Register_PostmanResponse retVal = ((ebox_client.ebox_webservice.ebox_serviceSoap)(this)).Register_Postman(inValue);
+            return retVal.Body.Register_PostmanResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ebox_client.ebox_webservice.Postman_SpendResponse ebox_client.ebox_webservice.ebox_serviceSoap.Postman_Spend(ebox_client.ebox_webservice.Postman_SpendRequest request) {
+            return base.Channel.Postman_Spend(request);
+        }
+        
+        public int Postman_Spend(string PhoneNo, int cost) {
+            ebox_client.ebox_webservice.Postman_SpendRequest inValue = new ebox_client.ebox_webservice.Postman_SpendRequest();
+            inValue.Body = new ebox_client.ebox_webservice.Postman_SpendRequestBody();
+            inValue.Body.PhoneNo = PhoneNo;
+            inValue.Body.cost = cost;
+            ebox_client.ebox_webservice.Postman_SpendResponse retVal = ((ebox_client.ebox_webservice.ebox_serviceSoap)(this)).Postman_Spend(inValue);
+            return retVal.Body.Postman_SpendResult;
         }
     }
 }

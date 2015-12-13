@@ -69,13 +69,37 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.系统管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.初始化电子柜ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.更新箱子状态ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage_ManagerLogin = new System.Windows.Forms.TabPage();
+            this.tabPage_AddBox = new System.Windows.Forms.TabPage();
+            this.tabPage_UpdateBox = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.statusStrip_Top.SuspendLayout();
+            this.toolStrip_bottom.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl_menu.SuspendLayout();
             this.tabPage_GetKD.SuspendLayout();
             this.tabPage_FindKD.SuspendLayout();
             this.tabPage_Login_man.SuspendLayout();
             this.tabPage_SendKD.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.tabPage_ManagerLogin.SuspendLayout();
+            this.tabPage_AddBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip_Top
@@ -83,9 +107,9 @@
             this.statusStrip_Top.Dock = System.Windows.Forms.DockStyle.Top;
             this.statusStrip_Top.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip_Top.Location = new System.Drawing.Point(0, 0);
+            this.statusStrip_Top.Location = new System.Drawing.Point(0, 24);
             this.statusStrip_Top.Name = "statusStrip_Top";
-            this.statusStrip_Top.Size = new System.Drawing.Size(1027, 22);
+            this.statusStrip_Top.Size = new System.Drawing.Size(953, 22);
             this.statusStrip_Top.TabIndex = 0;
             this.statusStrip_Top.Text = "statusStrip1";
             // 
@@ -98,9 +122,14 @@
             // toolStrip_bottom
             // 
             this.toolStrip_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStrip_bottom.Location = new System.Drawing.Point(0, 568);
+            this.toolStrip_bottom.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1,
+            this.toolStripLabel2,
+            this.toolStripLabel3,
+            this.toolStripLabel4});
+            this.toolStrip_bottom.Location = new System.Drawing.Point(0, 650);
             this.toolStrip_bottom.Name = "toolStrip_bottom";
-            this.toolStrip_bottom.Size = new System.Drawing.Size(1027, 25);
+            this.toolStrip_bottom.Size = new System.Drawing.Size(953, 25);
             this.toolStrip_bottom.TabIndex = 1;
             this.toolStrip_bottom.Text = "toolStrip1";
             // 
@@ -111,9 +140,9 @@
             this.panel1.Controls.Add(this.button_SendKD);
             this.panel1.Controls.Add(this.button_getKD);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 509);
+            this.panel1.Location = new System.Drawing.Point(0, 591);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1027, 59);
+            this.panel1.Size = new System.Drawing.Size(953, 59);
             this.panel1.TabIndex = 2;
             // 
             // button_Help
@@ -161,7 +190,10 @@
             this.tabControl_menu.Controls.Add(this.tabPage_FindKD);
             this.tabControl_menu.Controls.Add(this.tabPage_Login_man);
             this.tabControl_menu.Controls.Add(this.tabPage_SendKD);
-            this.tabControl_menu.Location = new System.Drawing.Point(96, 43);
+            this.tabControl_menu.Controls.Add(this.tabPage_ManagerLogin);
+            this.tabControl_menu.Controls.Add(this.tabPage_AddBox);
+            this.tabControl_menu.Controls.Add(this.tabPage_UpdateBox);
+            this.tabControl_menu.Location = new System.Drawing.Point(96, 84);
             this.tabControl_menu.Name = "tabControl_menu";
             this.tabControl_menu.SelectedIndex = 0;
             this.tabControl_menu.Size = new System.Drawing.Size(597, 376);
@@ -177,7 +209,7 @@
             this.tabPage_GetKD.Location = new System.Drawing.Point(4, 22);
             this.tabPage_GetKD.Name = "tabPage_GetKD";
             this.tabPage_GetKD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_GetKD.Size = new System.Drawing.Size(484, 237);
+            this.tabPage_GetKD.Size = new System.Drawing.Size(589, 350);
             this.tabPage_GetKD.TabIndex = 0;
             this.tabPage_GetKD.Text = "取快件";
             this.tabPage_GetKD.UseVisualStyleBackColor = true;
@@ -236,7 +268,7 @@
             this.tabPage_FindKD.Location = new System.Drawing.Point(4, 22);
             this.tabPage_FindKD.Name = "tabPage_FindKD";
             this.tabPage_FindKD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_FindKD.Size = new System.Drawing.Size(484, 237);
+            this.tabPage_FindKD.Size = new System.Drawing.Size(589, 350);
             this.tabPage_FindKD.TabIndex = 1;
             this.tabPage_FindKD.Text = "快件查询";
             this.tabPage_FindKD.UseVisualStyleBackColor = true;
@@ -299,7 +331,7 @@
             this.tabPage_Login_man.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Login_man.Name = "tabPage_Login_man";
             this.tabPage_Login_man.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Login_man.Size = new System.Drawing.Size(484, 237);
+            this.tabPage_Login_man.Size = new System.Drawing.Size(589, 350);
             this.tabPage_Login_man.TabIndex = 2;
             this.tabPage_Login_man.Text = "投快件_登陆";
             this.tabPage_Login_man.UseVisualStyleBackColor = true;
@@ -338,6 +370,7 @@
             this.textBox_postm_psw.Name = "textBox_postm_psw";
             this.textBox_postm_psw.Size = new System.Drawing.Size(123, 21);
             this.textBox_postm_psw.TabIndex = 3;
+            this.textBox_postm_psw.Text = "34534";
             // 
             // textBox_postm_ph
             // 
@@ -345,6 +378,7 @@
             this.textBox_postm_ph.Name = "textBox_postm_ph";
             this.textBox_postm_ph.Size = new System.Drawing.Size(123, 21);
             this.textBox_postm_ph.TabIndex = 2;
+            this.textBox_postm_ph.Text = "35645";
             // 
             // label4
             // 
@@ -408,7 +442,7 @@
             this.textBox_SD_usr_phone.Name = "textBox_SD_usr_phone";
             this.textBox_SD_usr_phone.Size = new System.Drawing.Size(128, 21);
             this.textBox_SD_usr_phone.TabIndex = 8;
-            this.textBox_SD_usr_phone.Text = "17097228602";
+            this.textBox_SD_usr_phone.Text = "17097228601";
             // 
             // button_SendPKG_Cancel
             // 
@@ -486,21 +520,199 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "收件人：";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1058, 136);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(86, 22);
+            this.toolStripLabel1.Text = "toolStripLabel1";
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(86, 22);
+            this.toolStripLabel2.Text = "toolStripLabel2";
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(86, 22);
+            this.toolStripLabel3.Text = "toolStripLabel3";
+            // 
+            // toolStripLabel4
+            // 
+            this.toolStripLabel4.Name = "toolStripLabel4";
+            this.toolStripLabel4.Size = new System.Drawing.Size(86, 22);
+            this.toolStripLabel4.Text = "toolStripLabel4";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.系统管理ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(953, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // 系统管理ToolStripMenuItem
+            // 
+            this.系统管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.初始化电子柜ToolStripMenuItem,
+            this.更新箱子状态ToolStripMenuItem});
+            this.系统管理ToolStripMenuItem.Name = "系统管理ToolStripMenuItem";
+            this.系统管理ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.系统管理ToolStripMenuItem.Text = "系统管理";
+            // 
+            // 初始化电子柜ToolStripMenuItem
+            // 
+            this.初始化电子柜ToolStripMenuItem.Name = "初始化电子柜ToolStripMenuItem";
+            this.初始化电子柜ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.初始化电子柜ToolStripMenuItem.Text = "初始化电子柜";
+            // 
+            // 更新箱子状态ToolStripMenuItem
+            // 
+            this.更新箱子状态ToolStripMenuItem.Name = "更新箱子状态ToolStripMenuItem";
+            this.更新箱子状态ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.更新箱子状态ToolStripMenuItem.Text = "更新箱子状态";
+            // 
+            // tabPage_ManagerLogin
+            // 
+            this.tabPage_ManagerLogin.Controls.Add(this.label9);
+            this.tabPage_ManagerLogin.Controls.Add(this.button2);
+            this.tabPage_ManagerLogin.Controls.Add(this.button3);
+            this.tabPage_ManagerLogin.Controls.Add(this.textBox1);
+            this.tabPage_ManagerLogin.Controls.Add(this.textBox2);
+            this.tabPage_ManagerLogin.Controls.Add(this.label10);
+            this.tabPage_ManagerLogin.Controls.Add(this.label11);
+            this.tabPage_ManagerLogin.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_ManagerLogin.Name = "tabPage_ManagerLogin";
+            this.tabPage_ManagerLogin.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_ManagerLogin.Size = new System.Drawing.Size(589, 350);
+            this.tabPage_ManagerLogin.TabIndex = 4;
+            this.tabPage_ManagerLogin.Text = "管理员_登录";
+            this.tabPage_ManagerLogin.UseVisualStyleBackColor = true;
+            // 
+            // tabPage_AddBox
+            // 
+            this.tabPage_AddBox.Controls.Add(this.button4);
+            this.tabPage_AddBox.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_AddBox.Name = "tabPage_AddBox";
+            this.tabPage_AddBox.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_AddBox.Size = new System.Drawing.Size(589, 350);
+            this.tabPage_AddBox.TabIndex = 5;
+            this.tabPage_AddBox.Text = "箱子初始化";
+            this.tabPage_AddBox.UseVisualStyleBackColor = true;
+            // 
+            // tabPage_UpdateBox
+            // 
+            this.tabPage_UpdateBox.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_UpdateBox.Name = "tabPage_UpdateBox";
+            this.tabPage_UpdateBox.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_UpdateBox.Size = new System.Drawing.Size(589, 350);
+            this.tabPage_UpdateBox.TabIndex = 6;
+            this.tabPage_UpdateBox.Text = "更新箱子";
+            this.tabPage_UpdateBox.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(354, 135);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(41, 12);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "label5";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(320, 188);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "取消";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(196, 188);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "登陆";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(196, 132);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(123, 21);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.Text = "34534";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(196, 84);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(123, 21);
+            this.textBox2.TabIndex = 9;
+            this.textBox2.Text = "35645";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(137, 132);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 12);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "密码：";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(89, 84);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(89, 12);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "快递员手机号：";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(199, 299);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "添加到数据库";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 593);
+            this.ClientSize = new System.Drawing.Size(953, 675);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl_menu);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip_bottom);
             this.Controls.Add(this.statusStrip_Top);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ebox system";
             this.Load += new System.EventHandler(this.Form_Main_Load);
             this.statusStrip_Top.ResumeLayout(false);
             this.statusStrip_Top.PerformLayout();
+            this.toolStrip_bottom.ResumeLayout(false);
+            this.toolStrip_bottom.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tabControl_menu.ResumeLayout(false);
             this.tabPage_GetKD.ResumeLayout(false);
@@ -511,6 +723,11 @@
             this.tabPage_Login_man.PerformLayout();
             this.tabPage_SendKD.ResumeLayout(false);
             this.tabPage_SendKD.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.tabPage_ManagerLogin.ResumeLayout(false);
+            this.tabPage_ManagerLogin.PerformLayout();
+            this.tabPage_AddBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -559,6 +776,26 @@
         private System.Windows.Forms.TextBox textBox_SD_express_No;
         private System.Windows.Forms.TextBox textBox_SD_usr_phone;
         private System.Windows.Forms.Label label_SendPKG_status;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 系统管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 初始化电子柜ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 更新箱子状态ToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage_ManagerLogin;
+        private System.Windows.Forms.TabPage tabPage_AddBox;
+        private System.Windows.Forms.TabPage tabPage_UpdateBox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button4;
     }
 }
 
